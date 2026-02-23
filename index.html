@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Afinas | Creative Graphic Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">AF<span>INAS</span></div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#contact" class="btn-contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Muhammad <span>Afinas</span></h1>
+        <h2 class="hero-subtitle">Creative Graphic Designer</h2>
+        <p class="hero-text">Crafting visually stunning experiences with a modern edge. Specializing in branding,
+          posters, and social media design.</p>
+        <div class="hero-btns">
+          <a href="#portfolio" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+        </div>
+      </div>
+      <div class="hero-background">
+        <div class="gradient-sphere sphere-1"></div>
+        <div class="gradient-sphere sphere-2"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="section-container">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+          <div class="about-info">
+            <p>Passion driven designer with a keen eye for modern aesthetics. I believe every design should tell a story
+              and leave a lasting impression.</p>
+            <div class="skills-mini">
+              <span class="skill-pill">Photoshop</span>
+              <span class="skill-pill">Illustrator</span>
+              <span class="skill-pill">Branding</span>
+              <span class="skill-pill">Social Media Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+      <div class="section-container">
+        <h2 class="section-title">My <span>Work</span></h2>
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="posters">Posters</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+        </div>
+        <div class="portfolio-grid" id="portfolio-grid">
+          <div class="project-card" data-category="posters">
+            <div class="project-image">
+              <img src="/poster1.png" alt="Lumina Festival Poster">
+              <div class="project-overlay">
+                <h3>Lumina Festival</h3>
+                <p>Neon Typography Poster</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="branding">
+            <div class="project-image">
+              <img src="/branding1.png" alt="Nexus Identity">
+              <div class="project-overlay">
+                <h3>Nexus Tech</h3>
+                <p>Brand Identity Design</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="social">
+            <div class="project-image">
+              <img src="/social1.png" alt="Aura Fashion">
+              <div class="project-overlay">
+                <h3>Aura Collective</h3>
+                <p>Social Media Campaign</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-card" data-category="branding">
+            <div class="project-image">
+              <img src="/branding2.png" alt="Aurum Coffee">
+              <div class="project-overlay">
+                <h3>Aurum Coffee</h3>
+                <p>Luxury Packaging Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="section-container">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="contact-wrapper">
+          <form id="contact-form" class="contact-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Muhammad Afinas. All rights reserved.</p>
+        <div class="social-links">
+          <a href="#">IG</a>
+          <a href="#">BE</a>
+          <a href="#">LN</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
